@@ -70,5 +70,18 @@
             <!--<columnOverride column="name" javaType="java.lang.String" jdbcType="VARCHAR" />-->
             <!--<columnOverride column="password" javaType="java.lang.String" jdbcType="VARCHAR" />-->
         </table>
+        <table schema="test" tableName="t_user" domainObjectName="User"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <!-- 忽略列，不生成bean 字段
+                <ignoreColumn column="FRED" />-->
+            <!-- 指定列的java数据类型
+            <columnOverride column="LONG_VARCHAR_FIELD" jdbcType="VARCHAR" />  -->
+            <!-- 用于指定生成实体类时是否使用实际的列名作为实体类的属性名。false是 Camel Case风格-->
+            <property name="useActualColumnNames" value="false" />
+            <!--<columnOverride column="name" javaType="java.lang.String" jdbcType="VARCHAR" />-->
+            <!--<columnOverride column="password" javaType="java.lang.String" jdbcType="VARCHAR" />-->
+        </table>
     </context>
 </generatorConfiguration>
