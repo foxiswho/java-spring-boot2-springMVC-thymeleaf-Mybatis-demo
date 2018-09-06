@@ -31,8 +31,6 @@ public class UserController {
     @ResponseBody
     @GetMapping("/all")
     public Object findAllUser(int page, int pageSize) {
-        //开始分页
-        PageHelper.startPage(page,pageSize);
         List<UserDomain> list =userService.findAllUser(page,pageSize);
         PageInfo pageInfo =new PageInfo(list);
         return pageInfo;
