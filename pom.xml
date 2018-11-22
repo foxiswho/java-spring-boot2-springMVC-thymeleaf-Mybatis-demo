@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>demo-1</name>
+	<name>java-spring-boot2-springMVC-thymeleaf-Mybatis-demo</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -19,7 +19,7 @@
 	</parent>
 
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 		<!-- excel export -->
 		<poi.version>3.17</poi.version>
 		<!-- impala -->
@@ -86,7 +86,7 @@
 		<dependency>
 		    <groupId>com.github.pagehelper</groupId>
 		    <artifactId>pagehelper-spring-boot-starter</artifactId>
-		    <version>1.2.7</version>
+		    <version>1.2.10</version>
 		</dependency>
 		<!--模板页面-->
 		<dependency>
@@ -103,7 +103,7 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
-			<version>1.2.23</version>
+			<version>1.2.53</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
